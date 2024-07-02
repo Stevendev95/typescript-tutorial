@@ -1,10 +1,6 @@
 "use strict";
-// functions
-const add = (number1, number2 = 10, number3) => {
-    console.log(number1 + number2);
+//Type Aliases
+const greetPerson = (firstName, uuid) => {
+    console.log(`Hello ${firstName}, the personal id is: ${uuid}`);
 };
-add(10);
-const minus = (num1, num2) => {
-    return num1 - num2;
-};
-console.log(minus(30, 20));
+greetPerson("Steven", 123);

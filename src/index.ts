@@ -1,13 +1,9 @@
-// functions
+//Type Aliases
 
-const add = (number1: number, number2: number = 10, number3?: number) => {
-  console.log(number1 + number2);
+type stringOrNumber = string | number;
+
+const greetPerson = (firstName: string, uuid: stringOrNumber) => {
+  console.log(`Hello ${firstName}, the personal id is: ${uuid}`);
 };
 
-add(10);
-
-const minus = (num1: number, num2: number): number => {
-  return num1 - num2;
-};
-
-console.log(minus(30, 20));
+greetPerson("Steven", 123);
