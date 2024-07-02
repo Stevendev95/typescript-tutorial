@@ -1,21 +1,13 @@
-// explict types
+// functions
 
-let age: number = 20;
-
-let user: {
-  firstName: string;
-  lastName: string;
-  age: number;
-  isStudent: boolean;
-  skills: string[];
+const add = (number1: number, number2: number = 10, number3?: number) => {
+  console.log(number1 + number2);
 };
 
-user = {
-  firstName: "Steven",
-  lastName: "Zuluaga Cortes",
-  age: 28,
-  isStudent: true,
-  skills: ["React JS", "Next JS"],
+add(10);
+
+const minus = (num1: number, num2: number): number => {
+  return num1 - num2;
 };
 
-console.log(user);
+console.log(minus(30, 20));

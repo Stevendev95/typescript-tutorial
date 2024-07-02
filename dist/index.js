@@ -1,12 +1,10 @@
 "use strict";
-// explict types
-let age = 20;
-let user;
-user = {
-    firstName: "Steven",
-    lastName: "Zuluaga Cortes",
-    age: 28,
-    isStudent: true,
-    skills: ["React JS", "Next JS"],
+// functions
+const add = (number1, number2 = 10, number3) => {
+    console.log(number1 + number2);
 };
-console.log(user);
+add(10);
+const minus = (num1, num2) => {
+    return num1 - num2;
+};
+console.log(minus(30, 20));
