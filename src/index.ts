@@ -1,9 +1,33 @@
-const character = "mario";
+// Arrays
+let names: string[] = ["steven", "pedro", "jairo"];
 
-console.log(character);
+names.push("Ana");
+// names.push(2);
+// names.push(false);
 
-const inputs = document.querySelectorAll("input");
-
-inputs.forEach((input) => {
-  console.log(input);
+names.forEach((name) => {
+  console.log(name.toUpperCase().length);
 });
+
+let numbers: number[] = [1, 4, 6];
+
+numbers.push(0);
+numbers.push(2);
+
+let mixed: (string | number)[] = ["Steven", 23];
+
+//objets
+
+let user = {
+  firstName: "Juan",
+  lastName: "Perez",
+  age: 25,
+};
+
+console.log(user);
+
+user = {
+  firstName: "Steven",
+  lastName: "Zuluaga",
+  age: 90,
+};
