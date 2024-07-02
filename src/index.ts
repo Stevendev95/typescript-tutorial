@@ -1,9 +1,14 @@
-//Type Aliases
+const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
-type stringOrNumber = string | number;
+// console.log(form.children);
 
-const greetPerson = (firstName: string, uuid: stringOrNumber) => {
-  console.log(`Hello ${firstName}, the personal id is: ${uuid}`);
-};
+const type = document.querySelector("#type") as HTMLSelectElement;
 
-greetPerson("Steven", 123);
+const toFrom = document.querySelector("#tofrom") as HTMLInputElement;
+const details = document.querySelector("#details") as HTMLInputElement;
+const amount = document.querySelector("#amount") as HTMLInputElement;
+
+form.addEventListener("submit", (ev: Event) => {
+  ev.preventDefault();
+  console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
+});
